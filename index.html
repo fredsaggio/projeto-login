@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Página de Login</title>
 </head>
 <body>
@@ -13,12 +14,33 @@
             <div id="imagem">
                 
             </div>
-            <div id="form">
-                <label for="iemail">E-mail:</label>
-                <input type="email" name="email" id="iemail">
 
-                <label for="ipass">Password:</label>
-                <input type="password" name="pass" id="ipass">
+            <h1>Login</h1>
+
+            <p>Seja bem vindo novamente! Logue com sua conta de sempre e aproveite a nossa página. Faça login para acessar sua conta.</p>
+
+            <div id="form">
+
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <label for="iemail">
+                        <div class="material-icons">person</div>
+                    </label>
+
+                    <input autocomplete="email" placeholder="email here" type="email" name="email" id="iemail">
+                    <br>
+
+                    <label for="ipass">
+                        <div class="material-icons">key</div>
+                    </label>
+
+                    <input autocomplete="current-password" placeholder="password here" type="password" name="pass" id="ipass">
+                    <br>
+
+                    <input type="submit" value="Enter" id="submit"> 
+                    <br>
+
+                    <input type="button" value="Forgot password?" id="forgpass">
+                </form>
             </div>
         </section>
     </main>

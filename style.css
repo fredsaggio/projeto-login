@@ -6,6 +6,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 body{
@@ -15,8 +16,12 @@ body{
     background-color: rgb(122, 26, 122);
 }
 
+
+/* ------------------------------------------------------ */
+
+
 main {
-    max-width: 300px;
+    max-width: 250px;
     border: 2px solid black;
     position: absolute;
     top: 50%;
@@ -26,26 +31,54 @@ main {
     height: 500px;
 }
 
+main h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+main p{
+    text-align: justify;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
 section{
     background-color: white;
     height: 100%;
     border-radius: 15px;
 }
 
-#imagem{
-    background: white url('imagens/pexels-albin-biju-19297354.jpg') no-repeat fixed center bottom;
+div#imagem{        
+    background: white url('imagens/pexels-mateus-castro-19275682.jpg') no-repeat fixed center center;
     background-size: cover;
     height: 200px;
-    width: 300px;
-    display: inline-block;
+    width: 250px;
+    display: block;
     border-radius: 15px 15px 0px 0px;
 }
 
-#form{
+div#form{
     display: block;
-    border: 1px solid black;
+    margin: auto;
+    box-sizing: border-box;
+    
 }
 
+input#submit, input#forgpass{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+input#submit{
+    background-color: rgb(68, 180, 162);
+}
+
+input#forgpass{
+    border: 1px solid rgb(68, 180, 162);
+}
 
 
 
