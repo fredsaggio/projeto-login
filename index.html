@@ -22,12 +22,13 @@
             <div id="form"> <!-- Tem que estar centralizado com text-align -->
 
                 <form action="cadastro.php" method="post" autocomplete="on">
+
                     <div class="campo">
                         <label for="iemail">
                             <div class="material-icons">person</div>
                         </label>
 
-                        <input autocomplete="email" placeholder="email here" type="email" name="email" id="iemail">
+                        <input autocomplete="email" placeholder="email here" type="email" name="email" id="iemail" required>
                     </div>
                    
 
@@ -36,11 +37,11 @@
                             <div class="material-icons">key</div>
                         </label>
 
-                        <input autocomplete="current-password" placeholder="password here" type="password" name="pass" id="ipass">
+                        <input autocomplete="current-password" placeholder="password here" type="password" name="pass" id="ipass" required minlength="8" maxlength="20">
                     </div>
                     
 
-                    <div>
+                    <div id="subfog">
                         <input type="submit" value="Enter" id="submit">
                         <br>
                         <input type="button" value="Forgot password?" id="forgpass">

@@ -11,7 +11,7 @@
 
 :root{
     --cor1: #5F2C82;
-    --cor2: rgb(68, 180, 162);
+    --cor2: #53AAA7;
     --cor3: #94CFCD;
 }
 
@@ -28,13 +28,13 @@ body{
 
 main {
     max-width: 230px;
-    border: 2px solid black;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
     height: 470px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.377);
 }
 
 main h1{
@@ -55,10 +55,10 @@ section{
 }
 
 div#imagem{        
-    background: white url('imagens/metal.jpg') no-repeat fixed center center;
+    background: white url('imagens/metal.jpg') no-repeat fixed left bottom;
     background-size: cover;
-    height: 200px;
-    width: 220px;
+    height: 180px;
+    width: 230px;
     display: block;
     border-radius: 15px 15px 0px 0px;
 }
@@ -74,7 +74,7 @@ div#form{
 input#submit, input#forgpass{
     width: 90%;
     margin: auto;
-    padding: 8px 3px;
+    padding: 10px 3px;
     border-radius: 5px;
     margin-top: 5px;
     
@@ -82,15 +82,23 @@ input#submit, input#forgpass{
 
 #iemail, #ipass{
     border-radius: 8px;
-    padding: 5px;
+    padding: 7px;
     height: 20px;
     background-color: var(--cor3);
     margin: auto;
+    border: none;
+    justify-content: center;
+    align-items: center;
 }
 
 input#submit{
     background-color: var(--cor2);
     color: white;
+    border: 1px solid rgb(68, 180, 162);
+}
+
+input#submit:hover{
+    background-color: rgb(27, 116, 116);
 }
 
 input#forgpass{
@@ -99,18 +107,28 @@ input#forgpass{
 
 }
 
+input#forgpass:hover{
+    background-color: rgb(77, 185, 185);
+}
+
 .campo{
     margin: auto; 
     background-color: #5F2C82;
-    width: 200px;
-    border-radius: 10px;
-    margin-top: 2px;
+    width: 195px;
+    border-radius: 7px;
+    margin-top: 4px;
     padding-left: 6px;
+    display: flex;
+    border: 2px solid #5F2C82;
 }
 
 .material-icons{
     color: white;
     margin: auto;
+}
+
+#subfog{
+    margin-top: 2px;
 }
 
 
