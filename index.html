@@ -12,34 +12,39 @@
     <main>
         <section>
             <div id="imagem">
-                
+                <!-- Image here -->
             </div>
 
             <h1>Login</h1>
 
             <p>Seja bem vindo novamente! Logue com sua conta de sempre e aproveite a nossa página. Faça login para acessar sua conta.</p>
 
-            <div id="form">
+            <div id="form"> <!-- Tem que estar centralizado com text-align -->
 
                 <form action="cadastro.php" method="post" autocomplete="on">
-                    <label for="iemail">
-                        <div class="material-icons">person</div>
-                    </label>
+                    <div class="campo">
+                        <label for="iemail">
+                            <div class="material-icons">person</div>
+                        </label>
 
-                    <input autocomplete="email" placeholder="email here" type="email" name="email" id="iemail">
-                    <br>
+                        <input autocomplete="email" placeholder="email here" type="email" name="email" id="iemail">
+                    </div>
+                   
 
-                    <label for="ipass">
-                        <div class="material-icons">key</div>
-                    </label>
+                    <div class="campo">
+                        <label for="ipass">
+                            <div class="material-icons">key</div>
+                        </label>
 
-                    <input autocomplete="current-password" placeholder="password here" type="password" name="pass" id="ipass">
-                    <br>
+                        <input autocomplete="current-password" placeholder="password here" type="password" name="pass" id="ipass">
+                    </div>
+                    
 
-                    <input type="submit" value="Enter" id="submit"> 
-                    <br>
-
-                    <input type="button" value="Forgot password?" id="forgpass">
+                    <div>
+                        <input type="submit" value="Enter" id="submit">
+                        <br>
+                        <input type="button" value="Forgot password?" id="forgpass">
+                    </div>
                 </form>
             </div>
         </section>

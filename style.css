@@ -9,11 +9,17 @@
     
 }
 
+:root{
+    --cor1: #5F2C82;
+    --cor2: rgb(68, 180, 162);
+    --cor3: #94CFCD;
+}
+
 body{
     height: 100vh;
     width: 100vw;
     position: relative;
-    background-color: rgb(122, 26, 122);
+    background-color: var(--cor1);
 }
 
 
@@ -21,14 +27,14 @@ body{
 
 
 main {
-    max-width: 250px;
+    max-width: 230px;
     border: 2px solid black;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
-    height: 500px;
+    height: 470px;
 }
 
 main h1{
@@ -38,7 +44,7 @@ main h1{
 
 main p{
     text-align: justify;
-    font-size: 0.9em;
+    font-size: 0.7em;
     padding: 10px;
 }
 
@@ -49,10 +55,10 @@ section{
 }
 
 div#imagem{        
-    background: white url('imagens/pexels-mateus-castro-19275682.jpg') no-repeat fixed center center;
+    background: white url('imagens/metal.jpg') no-repeat fixed center center;
     background-size: cover;
     height: 200px;
-    width: 250px;
+    width: 220px;
     display: block;
     border-radius: 15px 15px 0px 0px;
 }
@@ -61,25 +67,51 @@ div#form{
     display: block;
     margin: auto;
     box-sizing: border-box;
+    text-align: center;
     
 }
 
 input#submit, input#forgpass{
     width: 90%;
     margin: auto;
-    padding: 5px;
+    padding: 8px 3px;
     border-radius: 5px;
+    margin-top: 5px;
     
 }
 
+#iemail, #ipass{
+    border-radius: 8px;
+    padding: 5px;
+    height: 20px;
+    background-color: var(--cor3);
+    margin: auto;
+}
+
 input#submit{
-    background-color: rgb(68, 180, 162);
+    background-color: var(--cor2);
+    color: white;
 }
 
 input#forgpass{
     border: 1px solid rgb(68, 180, 162);
+    color: #2D6462;
+
 }
 
+.campo{
+    margin: auto; 
+    background-color: #5F2C82;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 2px;
+    padding-left: 6px;
+}
+
+.material-icons{
+    color: white;
+    margin: auto;
+}
 
 
 
