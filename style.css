@@ -81,7 +81,7 @@ div#formpart1{
 div.boxpurpleform{
     background-color: var(--cor1);
     border-radius: 5px;
-    width: 200px;
+    width: 90%;
     margin: auto;
     text-align: right;
 }
@@ -89,7 +89,7 @@ div.boxpurpleform{
 input#iemail, input#ipass{
     padding: 7px;
     border-radius: 8px;
-    width: 160px;
+    width: 190px;
     border: 2px solid var(--cor1);
     background-color: #ddb9b9;
     
@@ -130,7 +130,7 @@ div#formpart2 input:first-child:hover{
 }
 
 div#formpart2 input#button{
-    margin-top: 2px;
+    margin-top: 5px;
     color: var(--cor2);
     border: 1px solid var(--cor2);
 }
