@@ -1,177 +1,135 @@
 @charset "UTF-8";
 
-/* Mobile First */
+/* Mobile first */
 
-* {
+*{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 :root{
-    --cor1: #5F2C82;
-    --cor2: #53AAA7;
-    --cor3: #94CFCD;
+    --cor1: #671d69;
+    --cor2: #d14165;
+    --cor3: #AF1B3F;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
 }
 
 body{
-    height: 100vh;
-    width: 100vw;
-    position: relative;
     background-color: var(--cor1);
 }
 
 
-/* ------------------------------------------------------ */
+/* ------------------------------------------------- */
 
 
-main {
-    max-width: 230px;
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+main section{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 15px;
-    height: 470px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.377);
+    background-color: white;
+    width: 249px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    overflow: hidden;
+    display: block;
+
 }
 
-main h1{
+div#imagem{
+    background: white url('imagens/metal.jpg') no-repeat left bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+div#form h2{
+    text-align: center;
+    padding: 5px;
+}
+
+div#form p{
+    font-size: 0.8em;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+div#formpart1{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+div.boxpurpleform{
+    background-color: var(--cor1);
+    border-radius: 5px;
+    width: 200px;
+    margin: auto;
+    text-align: right;
+}
+
+input#iemail, input#ipass{
+    padding: 7px;
+    border-radius: 8px;
+    width: 160px;
+    border: 2px solid var(--cor1);
+    background-color: #ddb9b9;
+    
+}
+
+input#iemail:focus, input#ipass:focus{
+    background-color: white;
+}
+
+div#passbox{
+    margin-top: 5px;
+}
+
+div#formpart2{
     text-align: center;
     margin-top: 10px;
 }
 
-main p{
-    text-align: justify;
-    font-size: 0.7em;
-    padding: 10px;
+span.material-icons{
+    color: white;
 }
 
-section{
-    background-color: white;
-    height: 100%;
-    border-radius: 15px;
-}
-
-div#imagem{        
-    background: white url('imagens/metal.jpg') no-repeat fixed left bottom;
-    background-size: cover;
-    height: 180px;
-    width: 230px;
-    display: block;
-    border-radius: 15px 15px 0px 0px;
-}
-
-div#form{
-    display: block;
-    margin: auto;
-    box-sizing: border-box;
-    text-align: center;
-    
-}
-
-input#submit, input#forgpass{
+div#formpart2 input{
     width: 90%;
-    margin: auto;
-    padding: 10px 3px;
-    border-radius: 5px;
-    margin-top: 5px;
-    
+    padding: 7px 0px;
+    border-radius: 6px;
 }
 
-#iemail, #ipass{
-    border-radius: 8px;
-    padding: 7px;
-    height: 20px;
-    background-color: var(--cor3);
-    margin: auto;
-    border: none;
-    justify-content: center;
-    align-items: center;
-}
-
-input#submit{
+div#formpart2 input:first-child{
     background-color: var(--cor2);
     color: white;
-    border: 1px solid rgb(68, 180, 162);
+    border: 1px solid var(--cor2);
 }
 
-input#submit:hover{
-    background-color: rgb(27, 116, 116);
-}
-
-input#forgpass{
-    border: 1px solid rgb(68, 180, 162);
-    color: #2D6462;
+div#formpart2 input:first-child:hover{
+    background-color: var(--cor3);
 
 }
 
-input#forgpass:hover{
-    background-color: rgb(77, 185, 185);
-}
-
-.campo{
-    margin: auto; 
-    background-color: #5F2C82;
-    width: 195px;
-    border-radius: 7px;
-    margin-top: 4px;
-    padding-left: 6px;
-    display: flex;
-    border: 2px solid #5F2C82;
-}
-
-.material-icons{
-    color: white;
-    margin: auto;
-}
-
-#subfog{
+div#formpart2 input#button{
     margin-top: 2px;
+    color: var(--cor2);
+    border: 1px solid var(--cor2);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+input#button:hover{
+    background-color: rgba(228, 41, 72, 0.425);
+}

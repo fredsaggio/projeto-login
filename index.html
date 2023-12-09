@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media-queries.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Página de Login</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="media-queries.css" media="screen">
+    <title>Document</title>
 </head>
 <body>
     <main>
         <section>
             <div id="imagem">
-                <!-- Image here -->
+                
             </div>
 
-            <h1>Login</h1>
+            <div id="form">
 
-            <p>Seja bem vindo novamente! Logue com sua conta de sempre e aproveite a nossa página. Faça login para acessar sua conta.</p>
+                <h2>Login</h2>
 
-            <div id="form"> <!-- Tem que estar centralizado com text-align -->
+                <p>
+                    Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+                </p>
 
-                <form action="cadastro.php" method="post" autocomplete="on">
+                <form action="form.php" method="post">
 
-                    <div class="campo">
-                        <label for="iemail">
-                            <div class="material-icons">person</div>
-                        </label>
+                    <div id="formpart1">
+                        <div class="boxpurpleform" id="emailbox">
+                            <label for="iemail">
+                                <span class="material-icons">person</span>
+                            </label>
+                            <input onclick="noClique()" type="email" name="email" id="iemail" required placeholder="Email address" autocomplete="email">
+                        </div> 
 
-                        <input autocomplete="email" placeholder="Email address" type="email" name="email" id="iemail" required>
+
+                        <div class="boxpurpleform" id="passbox">
+                            <label for="ipass">
+                                <span class="material-icons">key</span>
+                            </label>
+                            <input type="password" name="pass" id="ipass" required placeholder="Password" autocomplete="current-password">
+                        </div>
                     </div>
-                   
 
-                    <div class="campo">
-                        <label for="ipass">
-                            <div class="material-icons">key</div>
-                        </label>
-
-                        <input autocomplete="current-password" placeholder="Password" type="password" name="pass" id="ipass" required minlength="8" maxlength="20">
+                    <div id="formpart2">
+                        <input id="submit" type="submit" value="Enter"> <br>
+                        <input id="button" type="button" value="Forgot password">
                     </div>
-                    
 
-                    <div id="subfog">
-                        <input type="submit" value="Enter" id="submit">
-                        <br>
-                        <input type="button" value="Forgot password?" id="forgpass">
-                    </div>
                 </form>
             </div>
         </section>
