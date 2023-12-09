@@ -53,6 +53,11 @@ div#imagem{
     background: white url('imagens/metal.jpg') no-repeat left bottom;
     background-size: cover;
     height: 200px;
+    display: block;
+}
+
+display#form{
+    display: block;
 }
 
 div#form h2{
