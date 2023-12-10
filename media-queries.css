@@ -1,2 +1,18 @@
 @charset "UTF-8";
 
+/* Typical Device Breakpoints 
+------------------------------
+Small screens: Up to 600px
+Smartphone: 600px to 768px
+Tablet: 768px to 992px
+Desktop: 992px to 1200px
+TVs and etc: Above 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    main section{
+        width: 90vw;
+        height: 300px;
+    }
+}
