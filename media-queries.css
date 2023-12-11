@@ -16,7 +16,7 @@ TVs and etc: Above 1200px
     }
 
     main section{
-        width: 90vw;
+        width: 80vw;
         height: 300px;
     }
 
@@ -29,5 +29,43 @@ TVs and etc: Above 1200px
     section div#form{
         float: right;
         width: 70%;
+    }
+
+    section div#form h2{
+        font-size: 1.7em;
+    }
+
+    section div#form p{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    body{
+        background-image: linear-gradient(to bottom, #671d69, #d14165)
+    }
+
+    main section{
+        width: 950px;
+    }
+
+    section div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section div#form{
+        float: left;
+        width: 50%;
+    }
+
+    section div#form h2{
+        font-size: 2em;
+    }
+
+    section div#form p{
+        font-size: 1.2em;
     }
 }

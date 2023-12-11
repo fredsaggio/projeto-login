@@ -40,12 +40,15 @@ main section{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: 250px;
+    width: 250px; 
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
     overflow: hidden;
     display: block;
+
+    transition: width .1s, height .1s;
+    transition-timing-function: ease; /* Comando novo, lembrar deste */
 
 }
 
@@ -69,6 +72,7 @@ div#form p{
     font-size: 0.8em;
     padding: 10px;
     line-height: 1.5em;
+    text-align: center;
 }
 
 div#formpart1{
@@ -89,7 +93,7 @@ div.boxpurpleform{
 input#iemail, input#ipass{
     padding: 7px;
     border-radius: 8px;
-    width: 90%;
+    width: 85%;
     border: 2px solid var(--cor1);
     background-color: #ddb9b9;
     
@@ -137,4 +141,10 @@ div#formpart2 input#button{
 
 input#button:hover{
     background-color: rgba(228, 41, 72, 0.425);
+}
+
+label.boxinsidepurple{
+    text-align: center;
+    display: inline;
+    margin: auto;
 }
