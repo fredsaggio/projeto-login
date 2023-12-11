@@ -89,14 +89,14 @@ div.boxpurpleform{
 input#iemail, input#ipass{
     padding: 7px;
     border-radius: 8px;
-    width: 190px;
+    width: 90%;
     border: 2px solid var(--cor1);
     background-color: #ddb9b9;
     
 }
 
 input#iemail:focus, input#ipass:focus{
-    background-color: white;
+    background-color: #fff;
 }
 
 div#passbox{
