@@ -48,6 +48,7 @@ TVs and etc: Above 1200px
 
     main section{
         width: 950px;
+        height: 350px;
     }
 
     section div#imagem{
@@ -67,5 +68,9 @@ TVs and etc: Above 1200px
 
     section div#form p{
         font-size: 1.2em;
+    }
+
+    div#formpart2{
+        height: 100%;
     }
 }
